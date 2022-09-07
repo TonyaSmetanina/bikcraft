@@ -33,7 +33,7 @@ body {
     color: #ffff;
 }
 
-.menu-ul ul{
+#menu-list-ul{
     display: flex;
     justify-content: flex-end;
     flex-direction: row;
@@ -42,13 +42,31 @@ body {
     align-items: center;
 }
 
-.menu-ul li {
+#menu-li{
     font-size: 1.8rem;
     list-style-type: none;
     padding: 0% 12% 0px 12%;
 }
 
-.menu-ul li:hover {
+#menu-li #menu-link{
+    text-decoration: none;
+    color: #ffff;
+}
+
+#menu-li #menu-link:hover{
+    color: #F6AD09;
+    cursor: pointer;
+}
+
+
+.menu-ul li a{
+    text-decoration: none;
+    color: #ffff;
+}
+
+
+.menu-ul li a:hover{
+    color: #F6AD09; 
     opacity: .7;
     cursor: pointer;
 }
@@ -111,6 +129,11 @@ body {
     color: #332200;
     text-decoration: none;
     margin: 5% 0 0 0;
+}
+
+.main-btn-yellow:hover {
+    transform:scale(1.1);
+    transition: all 400ms ease-in-out;
 }
 
 .main-right, 
@@ -233,6 +256,10 @@ body {
     color: #FFBB00;
 }
 
+.main-btn-alink:hover {
+    opacity: .6;
+}
+
 .clients {
     display: flex;
     justify-content: center;
@@ -268,13 +295,19 @@ body {
     width: auto; */
 }
 
+.client img:hover {
+    transform: scale(1.1);
+}
+
 .img-with-text {
     display: flex;
     justify-content: center;
+    margin: 3% 0 0% 0;
 }
 
 .img-with-text-img {
     width: 45%;
+    background-color: #161616;
 }
 
 .img-with-text-img img {
@@ -312,7 +345,7 @@ body {
 .prices {
     background-color: #161616;
     color: #ffff;
-
+    padding: 3% 0 3% 0%;
 
 }
 
@@ -330,6 +363,16 @@ body {
     width: 30%;
     margin: 2%;
     padding: 0 0% 2%;
+}
+
+.prices-block:hover .prices-title .pr-title{
+    color: #F6AD09;
+}
+
+.prices-block:hover {
+    transform: scale(1.1);
+    transition: all 400ms ease-out;
+
 }
 
 .prices-title {
@@ -403,6 +446,11 @@ body {
     margin: 11%;
 }
 
+.button a:hover {
+    color: #2E2E2E;
+    background-color: #CCCCCC;
+}
+
 .footer {
     background-color: #000000;
     color: #ffff;
@@ -465,4 +513,22 @@ body {
     position: relative;
     font-size: 3.6rem;
     /* margin: 0 14%; */
+}
+
+.coded {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    color: #9C9C9C;
+    background-color: #000000;
+    text-align: center;
+    padding: 4%;
+}
+
+.coded a{
+    text-decoration: none;
+    color: #ffff;
+}
+
+.coded a:hover {
+    color: #9C9C9C;
 }

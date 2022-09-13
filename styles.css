@@ -173,6 +173,10 @@ body {
     list-style-type: none;
 }
 
+.cards li:hover {
+    opacity: .8;
+}
+
 .cards-title,
 .cards-title-list {
     font-size: 3.0rem;
